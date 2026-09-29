@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "2164e3d5-0c59-4b0d-99a1-fe1ae64dd248",
+    "name": "TaskManagement API Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44262210",
+    "_collection_link": "https://go.postman.co/collection/44262210-2164e3d5-0c59-4b0d-99a1-fe1ae64dd248?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All Tasks",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7272/api/Tasks",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7272",
+          "path": [
+            "api",
+            "Tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Task By Id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7272/api/Tasks/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7272",
+          "path": [
+            "api",
+            "Tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create Task",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Abdelhady's Task\",\r\n    \"description\": \"Complete Task Management API\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7272/api/Tasks",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7272",
+          "path": [
+            "api",
+            "Tasks"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Task",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"title\": \"Abdelhady's Task\",\r\n    \"description\": \"Complete Task Management API - Updated\",\r\n    \"isCompleted\": true\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://localhost:7272/api/Tasks/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7272",
+          "path": [
+            "api",
+            "Tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete Task",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://localhost:7272/api/Tasks/1",
+          "protocol": "https",
+          "host": [
+            "localhost"
+          ],
+          "port": "7272",
+          "path": [
+            "api",
+            "Tasks",
+            "1"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
